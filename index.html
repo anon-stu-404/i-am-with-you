@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Anha — You Don't Have to be Strong Right Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
+</head>
+<body>
+    <main class="container">
+        <!-- Background with gentle gradient movement -->
+        <div class="background" aria-hidden="true"></div>
+        
+        <!-- Main scene container -->
+        <div class="scene">
+            <!-- The stick girl -->
+            <div class="figure girl" id="girl">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+                <div class="breath-indicator"></div>
+            </div>
+            
+            <!-- The wave of pain -->
+            <div class="wave" id="wave"></div>
+            
+            <!-- The companion -->
+            <div class="figure companion" id="companion">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
+            
+            <!-- Particle system for wave dissolution -->
+            <div class="particles" id="particles"></div>
+        </div>
+        
+        <!-- Text messages -->
+        <div class="messages">
+            <div class="message recognition" id="recognition">
+                <p>Some days, the weight doesn't need to be carried alone.</p>
+            </div>
+            <div class="message comfort" id="comfort">
+                <p>Rest. Drink water. Let time do what it always does.</p>
+                <p class="signature">— I'm here</p>
+            </div>
+        </div>
+        
+        <!-- Controls -->
+        <div class="controls">
+            <button class="control-btn" id="pauseBtn" aria-label="Pause animation">
+                <span class="btn-icon">⏸️</span>
+            </button>
+            <button class="control-btn" id="resetBtn" aria-label="Restart animation">
+                <span class="btn-icon">↺</span>
+            </button>
+            <button class="control-btn" id="breathBtn" aria-label="Follow breathing guide">
+                <span class="btn-icon">🌬️</span>
+            </button>
+        </div>
+        
+        <!-- Hidden interactive elements -->
+        <div class="interactive-hint" id="hint">
+            <p>Click or touch anywhere to feel supported</p>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
